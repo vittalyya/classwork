@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<script>
+
+function vika(){
+
+elem.onclick = function(){
+	alert('I am clicked!!');
+	}
+	
+elem.onhover = function(){
+	alert('I am hovered!!');
+	}
+	
+elem2.onclick = function(){
+	alert('HAHAHA!!');
+	}
+	
+elem2.onhover = function(){
+	alert('I LOVE YOU!!');
+	}
+	
+elem3.onclick = function(){
+	alert('XOXOXO!!');
+	}
+	
+elem3.onhover = function(){
+	alert('I hate YOU!!');
+	}
+
+}
+
+vika();
+
+</script>
+
+<input value="click on me" type="button" id="elem">
+
+<input value="click on me" type="button" id="elem2">
+
+<input value="click on me" type="button" id="elem3">
+
+</body>
+</html>
