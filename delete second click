@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<div><input value="click on me" type="button" id="elem"></div>
+<div><input value="click on me" type="button" id="elem2"></div>
+
+<script>
+
+function vika(){
+
+elem2.addEventListener('click', hi);
+
+elem.addEventListener('click', function(){
+
+elem2.removeEventListener('click', hi);
+alert()});
+
+function hi(){alert('HELLO')};
+
+}
+
+
+
+
+
+vika();
+
+</script>
+
+
+
+</body>
+</html>
