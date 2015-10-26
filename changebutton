@@ -1,0 +1,20 @@
+var but = document.getElementById('b');
+
+var clicked = false;
+
+function ev(event){
+	
+	clicked = !clicked;
+	
+	if (clicked = clicked){
+		but.innerText = 'you touched me';
+	}
+	
+	else{
+	
+	but.innerText = 'you touched me again';
+	}
+}
+
+
+but.addEventListener('click', ev);
