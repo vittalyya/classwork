@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test CSS selectors</title>
+</head>
+<body>
+
+  <input type="text">
+  
+  <button>click</button>
+  
+  
+  
+  <script src="jquery-1.11.3.js"></script>
+  
+  <script>
+  
+
+  $('button').on("click", function() {
+  	
+	var vall = $('input').val();
+	
+	var divv = $('<div/>');
+	
+	divv.html(vall);
+	
+	$( "body" ).append( divv );
+	
+	$('input').val('');
+	
+	});
+  
+  
+  
+  
+  
+  </script>
+
+</body>
+</html>
