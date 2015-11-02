@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test CSS selectors</title>
+</head>
+<body>
+
+  <input type="checkbox" id="main" checked="checked">
+  <div></div>
+  
+  <input type="radio" id="1" name="group" "disabled" value="dis">
+  <label for="1">disabled</label>
+  <input type="radio" id="2" name="group" "enabled" value="en">
+  <label for="2">enabled</label>
+  
+  
+  <script src="jquery-1.11.3.js"></script>
+  
+  <script>
+  
+	$('input[name="group"]').on("change", function(){
+	
+		var vall = $(this).val() ;
+		if (vall == "dis" )
+		{
+  		$("#main").prop("disabled", true);
+		}
+		
+		else{
+		
+  		$("#main").prop("disabled", false)
+		};
+  
+  })
+  
+ 
+  $("#main").on("change", function(){
+	
+	if ($(this).prop("checked") == true) 
+	{
+	
+	alert('yes');
+	
+	$("div").html("checked");
+	}
+	
+	else
+	{alert('no');}
+
+  
+  });
+  
+  
+  
+  
+  
+  
+  </script>
+
+</body>
+</html>
