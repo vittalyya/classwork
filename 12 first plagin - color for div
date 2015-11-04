@@ -1,0 +1,23 @@
+(function($){
+	$.fn.onHoverChange = function(options){
+		
+	options = $.extend({
+						   defColor: "pink",
+						   hoverColor: "blue"
+						   }, options);	
+	$(this).hover(function(){
+		$(this).css('color', options.hoverColor)
+		},
+	
+	function(){
+		$(this).css('color', options.defColor)
+		});
+			
+		
+		
+		
+		
+	
+		
+	};
+})($);
