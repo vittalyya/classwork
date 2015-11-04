@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test CSS selectors</title>
+  
+  <style>
+  
+  
+  </style>
+  
+</head>
+<body>
+
+
+<div id="im">
+
+<img src="1.png" height="200" class="anim">
+<img src="2.png" height="200" class="anim">
+<img src="3.png" height="200" class="anim">
+<img src="4.png" height="200" class="anim">
+<img src="5.png" height="200" class="anim">
+<img src="6.png" height="200" class="anim">
+
+</div>
+
+  <button id="but3">BIGGER</button>
+  
+  
+  <script src="jquery-1.11.3.js"></script>
+  
+  <script>
+  
+$( "#but3" ).click(function() {
+  $( ".anim" ).animate({
+    opacity: 0.25,
+    //left: "+=50",
+    //height: "toggle"
+  }, 5000, function() {
+    
+  });
+  
+  
+ /* $( "#im" ).animate({
+   padding:10px
+  }, 5000, function() {
+  
+  $("#im").children():even
+  
+    
+  });*/
+  
+  
+  
+});
+
+
+//	$('img').animate({ padding :200px,
+//						height: 300px} , 3000 )
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ 
+  
+  </script>
+
+</body>
+</html>
