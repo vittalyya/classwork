@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test CSS selectors</title>
+</head>
+<body>
+
+
+<button id="but1">option 1</button>
+<button id="but2">option 2</button>
+
+<div>
+
+The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
+
+For example, this can be useful when:
+
+Clicking on a "Submit" button, prevent it from submitting a form
+Clicking on a link, prevent the link from following the URL
+Note: Not all events are cancelable. Use the cancelable property to find out if an event is cancelable.
+
+Note: The preventDefault() method does not prevent further propagation of an event through the DOM. Use the stopPropagation() method to handle this.
+
+</div>
+
+  <button id="but3">BIGGER</button>
+  
+  
+  <script src="jquery-1.11.3.js"></script>
+  
+  <script>
+  
+
+	
+
+  $('div').hover(function(){
+  
+  	$('div').css('color', 'red')
+  		
+	},
+	function(){
+  
+  	$('div').css('color', 'green')
+  		
+	});
+	
+	
+	
+	
+	$('#but3').on("click", function(){
+	
+	var timeForShow = +prompt('enter number');
+	
+	
+	
+var check = isNaN('timeForShow');
+	if (check = true)
+	{
+	$('div').fadeOut( timeForShow );
+	}
+	
+setTimeout(function(){$('div').fadeIn( timeForShow );}, 4000)
+	
+	});
+  
+ 
+  
+  </script>
+
+</body>
+</html>
